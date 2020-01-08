@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.Param;
 
 import com.xwx.cms.pojo.Article;
 
-import com.xwx.cms.pojo.User;
+import com.xwx.cms.pojo.User; 
 
 public interface ArticleDao extends BaseDao<Article>{
 
