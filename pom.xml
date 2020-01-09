@@ -37,7 +37,7 @@
   			<groupId>com.xwx.cms</groupId>
 	  		<artifactId>xwx.cms-cms-utils</artifactId>
 	  		<version>0.0.1-SNAPSHOT</version>
-	  	</dependency> -->
+	  	</dependency> --> 
 
   	<!-- spring 及springMVC -->
 		<dependency>

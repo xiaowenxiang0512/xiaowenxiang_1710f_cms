@@ -9,7 +9,7 @@ import com.xwx.cms.pojo.User;
 
 public interface CollectDao extends BaseDao<Collect>{
 
-	List<Collect> List(Collect collect);
+	/*List<Collect> List(Collect collect);
 	
 	User ListById(@Param("id")Integer id);
 	
@@ -17,6 +17,6 @@ public interface CollectDao extends BaseDao<Collect>{
 	
 	int Update(Collect collect);
 	
-	int Deletes(@Param("ids")String ids);
+	int Deletes(@Param("ids")String ids);*/
 
 }

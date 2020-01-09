@@ -9,7 +9,7 @@ import com.xwx.cms.pojo.User;
 
 public interface SettingsDao extends BaseDao<Settings>{
 
-	List<Settings> List(Settings settings);
+	/*List<Settings> List(Settings settings);
 	
 	User ListById(@Param("id")Integer id);
 	
@@ -17,6 +17,6 @@ public interface SettingsDao extends BaseDao<Settings>{
 	
 	int Update(Settings settings);
 	
-	int Deletes(@Param("ids")String ids);
+	int Deletes(@Param("ids")String ids);*/
 
 }

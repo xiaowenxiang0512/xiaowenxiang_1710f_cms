@@ -9,7 +9,7 @@ import com.xwx.cms.pojo.User;
 
 public interface SlideDao extends BaseDao<Slide>{
 
-	List<Slide> List(Slide slide);
+	/*List<Slide> List(Slide slide);
 	
 	User ListById(@Param("id")Integer id);
 	
@@ -17,6 +17,6 @@ public interface SlideDao extends BaseDao<Slide>{
 	
 	int Update(Slide slide);
 	
-	int Deletes(@Param("ids")String ids);
+	int Deletes(@Param("ids")String ids);*/
 
 }

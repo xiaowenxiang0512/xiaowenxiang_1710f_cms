@@ -9,7 +9,7 @@ import com.xwx.cms.pojo.User;
 
 public interface TagDao extends BaseDao<Tag>{
 
-	List<Tag> List(Tag tag);
+	/*List<Tag> List(Tag tag);
 	
 	User ListById(@Param("id")Integer id);
 	
@@ -17,6 +17,6 @@ public interface TagDao extends BaseDao<Tag>{
 	
 	int Update(Tag tag);
 	
-	int Deletes(@Param("ids")String ids);
+	int Deletes(@Param("ids")String ids);*/
 
 }

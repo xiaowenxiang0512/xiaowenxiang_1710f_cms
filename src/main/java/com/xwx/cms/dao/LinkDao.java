@@ -9,7 +9,7 @@ import com.xwx.cms.pojo.User;
 
 public interface LinkDao extends BaseDao<Link>{
 
-	List<Link> List(Link link);
+	/*List<Link> List(Link link);
 	
 	User ListById(@Param("id")Integer id);
 	
@@ -17,6 +17,6 @@ public interface LinkDao extends BaseDao<Link>{
 	
 	int Update(Link link);
 	
-	int Deletes(@Param("ids")String ids);
+	int Deletes(@Param("ids")String ids);*/
 
 }

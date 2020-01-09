@@ -9,7 +9,7 @@ import com.xwx.cms.pojo.User;
 
 public interface CategoryDao extends BaseDao<Category>{
 
-	List<Category> List(Category category);
+	/*List<Category> List(Category category);
 	
 	User ListById(@Param("aid")Integer aid);
 	
@@ -17,6 +17,6 @@ public interface CategoryDao extends BaseDao<Category>{
 	
 	int Update(Category category);
 	
-	int Deletes(@Param("aids")String aids);
+	int Deletes(@Param("aids")String aids);*/
 
 }

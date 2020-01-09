@@ -9,7 +9,7 @@ import com.xwx.cms.pojo.User;
 
 public interface ChannelDao extends BaseDao<Channel>{
 
-	List<Channel> List(Channel channel);
+	/*List<Channel> List(Channel channel);
 	
 	User ListById(@Param("id")Integer id);
 	
@@ -17,6 +17,6 @@ public interface ChannelDao extends BaseDao<Channel>{
 	
 	int Update(Channel channel);
 	
-	int Deletes(@Param("ids")String ids);
+	int Deletes(@Param("ids")String ids);*/
 
 }

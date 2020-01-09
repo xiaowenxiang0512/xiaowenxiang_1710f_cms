@@ -9,7 +9,7 @@ import com.xwx.cms.pojo.User;
 
 public interface ArticleVoteDao extends BaseDao<ArticleVote> {
 
-	List<ArticleVote> List(ArticleVote vote);
+	/*List<ArticleVote> List(ArticleVote vote);
 	
 	User ListById(@Param("id")Integer id);
 	
@@ -17,6 +17,6 @@ public interface ArticleVoteDao extends BaseDao<ArticleVote> {
 	
 	int Update(ArticleVote vote);
 	
-	int Deletes(@Param("ids")String ids);
+	int Deletes(@Param("ids")String ids);*/
 
 }
