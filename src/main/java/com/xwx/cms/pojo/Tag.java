@@ -17,5 +17,10 @@ public class Tag {
 	public void setTagname(String tagname) {
 		this.tagname = tagname;
 	}
+	@Override
+	public String toString() {
+		return "Tag [id=" + id + ", tagname=" + tagname + "]";
+	}
 
+	
 }

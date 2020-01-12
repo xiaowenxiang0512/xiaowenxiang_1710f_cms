@@ -1,5 +1,7 @@
 package com.xwx.cms.pojo;
 
+import java.util.Date;
+
 public class Link {
 	/**  **/
 	private Integer id;
@@ -8,7 +10,7 @@ public class Link {
 	/**  **/
 	private String url;
 	/**  **/
-	private String created;
+	private Date created;
 	public Integer getId() {
 		return id;
 	}
@@ -27,11 +29,17 @@ public class Link {
 	public void setUrl(String url) {
 		this.url = url;
 	}
-	public String getCreated() {
+	
+	public Date getCreated() {
 		return created;
 	}
-	public void setCreated(String created) {
+	public void setCreated(Date created) {
 		this.created = created;
 	}
+	@Override
+	public String toString() {
+		return "Link [id=" + id + ", text=" + text + ", url=" + url + ", created=" + created + "]";
+	}
 	
+
 }

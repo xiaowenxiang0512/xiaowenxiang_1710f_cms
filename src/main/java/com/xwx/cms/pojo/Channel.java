@@ -41,5 +41,10 @@ public class Channel {
 	public void setSorted(Integer sorted) {
 		this.sorted = sorted;
 	}
+	@Override
+	public String toString() {
+		return "Channel [id=" + id + ", name=" + name + ", description=" + description + ", icon=" + icon + ", sorted="
+				+ sorted + "]";
+	}
 
 }

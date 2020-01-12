@@ -25,5 +25,10 @@ public class VoteContent {
 	public void setContent(String content) {
 		this.content = content;
 	}
+	@Override
+	public String toString() {
+		return "Vote_content [id=" + id + ", title=" + title + ", content=" + content + "]";
+	}
 
+	
 }

@@ -1,5 +1,7 @@
 package com.xwx.cms.pojo;
 
+import java.util.Date;
+
 public class Collect {
 	/**  **/
 	private Integer id;
@@ -8,7 +10,7 @@ public class Collect {
 	/**  **/
 	private String url;
 	/**  **/
-	private String created;
+	private Date created;
 	/**  **/
 	private Integer user_id;
 	public Integer getId() {
@@ -29,10 +31,11 @@ public class Collect {
 	public void setUrl(String url) {
 		this.url = url;
 	}
-	public String getCreated() {
+	
+	public Date getCreated() {
 		return created;
 	}
-	public void setCreated(String created) {
+	public void setCreated(Date created) {
 		this.created = created;
 	}
 	public Integer getUser_id() {
@@ -41,5 +44,12 @@ public class Collect {
 	public void setUser_id(Integer user_id) {
 		this.user_id = user_id;
 	}
+	@Override
+	public String toString() {
+		return "Collect [id=" + id + ", text=" + text + ", url=" + url + ", created=" + created + ", user_id=" + user_id
+				+ "]";
+	}
+	
+
 	
 }

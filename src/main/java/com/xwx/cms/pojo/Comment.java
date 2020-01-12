@@ -1,5 +1,7 @@
 package com.xwx.cms.pojo;
 
+import java.util.Date;
+
 public class Comment {
 	/**  **/
 	private Integer id;
@@ -10,7 +12,7 @@ public class Comment {
 	/** 评论内容 **/
 	private String content;
 	/** 评论时间 **/
-	private String created;
+	private Date created;
 	public Integer getId() {
 		return id;
 	}
@@ -35,11 +37,18 @@ public class Comment {
 	public void setContent(String content) {
 		this.content = content;
 	}
-	public String getCreated() {
+	
+	public Date getCreated() {
 		return created;
 	}
-	public void setCreated(String created) {
+	public void setCreated(Date created) {
 		this.created = created;
 	}
+	@Override
+	public String toString() {
+		return "Comment [id=" + id + ", articleId=" + articleId + ", userId=" + userId + ", content=" + content
+				+ ", created=" + created + "]";
+	}
+	
 	
 }

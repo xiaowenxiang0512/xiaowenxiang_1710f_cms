@@ -57,5 +57,12 @@ public class Settings {
 	public void setAdmin_password(String admin_password) {
 		this.admin_password = admin_password;
 	}
+	@Override
+	public String toString() {
+		return "Settings [id=" + id + ", site_domain=" + site_domain + ", site_name=" + site_name
+				+ ", article_list_size=" + article_list_size + ", slide_size=" + slide_size + ", admin_username="
+				+ admin_username + ", admin_password=" + admin_password + "]";
+	}
 
+	
 }

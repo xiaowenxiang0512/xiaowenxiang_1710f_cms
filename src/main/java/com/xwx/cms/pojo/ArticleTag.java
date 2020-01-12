@@ -17,6 +17,10 @@ public class ArticleTag {
 	public void setTid(Integer tid) {
 		this.tid = tid;
 	}
-	
+	@Override
+	public String toString() {
+		return "Article_tag [aid=" + aid + ", tid=" + tid + "]";
+	}
 
+	
 }
