@@ -8,7 +8,7 @@ public class CmsMd5Util {
 	 * @Description: cms密码加密   
 	 * @param: @param str
 	 * @param: @return      
-	 * @return: String       
+	 * @return: String      
 	 * @throws
 	 */
 	public static String md5(String str) {

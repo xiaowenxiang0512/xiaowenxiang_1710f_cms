@@ -101,7 +101,7 @@ public class AdminController {
 	
 	@RequestMapping("/updateLocked")
 	public @ResponseBody JsonResult updateLocked(User user) {
-		boolean result = userService.updateLocked(user.getId());
+		userService.updateLocked(user.getId());
 		return JsonResult.sucess();
 	}
 	

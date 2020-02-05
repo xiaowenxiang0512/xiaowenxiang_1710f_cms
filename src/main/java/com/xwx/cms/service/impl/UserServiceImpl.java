@@ -12,6 +12,7 @@ import com.xwx.cms.common.CmsMd5Util;
 import com.xwx.cms.dao.UserDao;
 import com.xwx.cms.pojo.User;
 import com.xwx.cms.service.UserService;
+import com.xwx.common.utils.RandomUtil;
 @Service
 public class UserServiceImpl implements UserService{
 	@Autowired
@@ -69,6 +70,13 @@ public class UserServiceImpl implements UserService{
 			user.setLocked(0);
 		}
 		return userDao.update(user)>0;
+	}
+
+	@Override
+	public Integer getRandomUserId() {
+		List<Integer> userIdList = userDao.selectIdList();
+		int random = RandomUtil.random(0, userIdList.size()-1);
+		return userIdList.get(random);
 	}
 	
 }

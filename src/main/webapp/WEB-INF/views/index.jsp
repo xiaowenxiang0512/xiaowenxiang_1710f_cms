@@ -123,6 +123,14 @@
 			</div>
 
 		</div>
+		<div class="col-10 offset-1 breadcrumb" style="margin-bottom: 200px;">
+			友情链接：
+			<c:forEach items="${linkList }" var="item">
+				<div style="margin-left: 20px;">
+					<a href="${item.url }" target="_blank">${item.text }</a>
+				</div>
+			</c:forEach>
+		</div>
 	</div>
 	<script src="/public/js/jquery.min.1.12.4.js"></script>
 	<script src="/public/js/bootstrap.min.js"></script>

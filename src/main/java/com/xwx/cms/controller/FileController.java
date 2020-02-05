@@ -15,7 +15,6 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.xwx.common.utils.FileUtil;
 
-
 @Controller
 @RequestMapping("/file/")
 public class FileController {

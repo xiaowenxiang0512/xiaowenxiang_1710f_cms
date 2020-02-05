@@ -17,6 +17,7 @@ import com.xwx.cms.pojo.Category;
 import com.xwx.cms.pojo.Channel;
 import com.xwx.cms.pojo.User;
 import com.xwx.cms.service.ArticleService;
+import com.xwx.common.utils.RandomUtil;
 @Service
 public class ArticleServiceImpl implements ArticleService{
 	@Autowired
@@ -164,6 +165,31 @@ public class ArticleServiceImpl implements ArticleService{
 		Article article = new Article();
 		article.setStatus(1);
 		return articleDao.select(article);
+	}
+
+	@Override
+	public List<Article> getRelArticelList(Integer channelId, Integer cateId, Integer articleId, Integer pageSize) {
+		Article article = new Article();
+		article.setChannel_id(channelId);
+//		article.setCategory_id(cateId);
+		article.setId(articleId);
+		PageHelper.startPage(1, pageSize);
+		List<Article> articleList = articleDao.select(article);
+		return articleList;
+	}
+
+	@Override
+	public boolean updateCommentCnt(Integer id) {
+		Article article = articleDao.selectById(id);
+		article.setCommentCnt(article.getCommentCnt()+1);
+		return articleDao.update(article)>0;
+	}
+
+	@Override
+	public Integer getRandomArticleId() {
+		List<Integer> articleIdList = articleDao.selectIdList();
+		int random = RandomUtil.random(0, articleIdList.size()-1);
+		return articleIdList.get(random);
 	}
 
 }
